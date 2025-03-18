@@ -25,7 +25,8 @@ class Program
             double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
             Console.WriteLine($"As raízes são: x1 = {x1} e x2 = {x2}");
         }
-        else if (delta == 0)
+        else 
+            if (delta == 0)
         {
             // Uma raiz real (raiz dupla)
             double x = -b / (2 * a);
