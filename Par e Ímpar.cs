@@ -1,5 +1,4 @@
-// Online C# Editor for free
-// Write, Edit and Run your C# code using C# Online Compiler
+// data da aula: 13/03/2025
 
 using System;
 
