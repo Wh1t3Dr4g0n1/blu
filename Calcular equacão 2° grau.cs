@@ -4,7 +4,7 @@
 // 3. Leia a
 // 4. Leia b
 // 5. Leia c
-// 6. delta = b x b - 4 * a * c
+// 6. delta = b * b - 4 * a * c
 // 7. Mostre "Delta:" , delta
 // 8. Se (delta < 0)
 //       Mostre  "Não Existe Raizes Reais"
@@ -43,19 +43,19 @@ class Program
             // Duas raízes reais e diferentes
             double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
             double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
-            Console.WriteLine($"As raízes são: x1 = {x1} e x2 = {x2}");
+            Console.WriteLine($"As raizes sao: x1 = {x1} e x2 = {x2}");
         }
         else 
             if (delta == 0)
         {
             // Uma raiz real (raiz dupla)
             double x = -b / (2 * a);
-            Console.WriteLine($"A raiz é: x = {x}");
+            Console.WriteLine($"A raiz e: x = {x}");
         }
         else
         {
             // Não há raízes reais
-            Console.WriteLine("Não há raízes reais.");
+            Console.WriteLine("Nao ha raizes reais.");
         }
     }
 }
