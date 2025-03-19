@@ -1,4 +1,22 @@
 // data da aula: 13/03/2025
+// 1. inicio
+// 2. var a,b,c,delta,x:Real
+// 3. Leia a
+// 4. Leia b
+// 5. Leia c
+// 6. delta = b x b - 4 * a * c
+// 7. Mostre "Delta:" , delta
+// 8. Se (delta < 0)
+//       Mostre  "Não Existe Raizes Reais"
+// 	Senão Se (delta = 0)
+// 	x = -b / 2 * a
+// 	Mostre "x: " , x
+//	Senão
+//	x = (-b + √delta) / 2 * a
+//	Mostre "x1: " , x
+//	Fim-se
+// 	Fim-se
+// 9. Fim
 
 using System;
 
