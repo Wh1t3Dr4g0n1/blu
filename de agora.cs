@@ -1,3 +1,11 @@
+// Elabore algoritmo
+// Fluxograma
+// Progamação c# console
+// que mostre uma sequencia de numeros pares
+// apartir de um limite
+// especificado pelo usuário
+
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
