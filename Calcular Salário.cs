@@ -1,4 +1,4 @@
-// Crie um progama que solicite do usu[ariio os seguintes dados:
+// Crie um progama que solicite do usuario os seguintes dados:
 // - nome
 // - rg
 // - cpf
@@ -42,7 +42,3 @@
 //        SL = SL + 1000.00
 //  	Senão
 //	      SL = SL + 800.00
-
-
-                                    
-	   
