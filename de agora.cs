@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -14,18 +15,19 @@ namespace meu_lindo
         {
             int blu;
             int bla;
-            int resto;
+            int ble;
             Console.WriteLine("lhe darei uma quantia de numeros pares para você de acordo com o limite que você me der");
             Console.Write("inicio do limite: ");
-            bla = Convert.ToInt32(Console.ReadLine());
+            bla = int.Parse(Console.ReadLine());
             Console.Write("fim do limite: ");
-            blu = Convert.ToInt32(Console.ReadLine());
-            resto == blu % 2;
-            if (resto == 0)
+            blu = int.Parse(Console.ReadLine());
+            for (ble = bla; ble <= blu; ble++)
+            {
+                if (ble % 2 == 0)
+                    Console.WriteLine(ble);
+            }
 
-            else
-            Console.WriteLine("esse numero n é par");
-            
+            Console.ReadKey();
         }
     }
 }
