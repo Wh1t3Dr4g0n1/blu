@@ -111,7 +111,7 @@ namespace meu_lindo
                 Console.WriteLine("Seu Convenio Médico: " + CM);
                 Console.WriteLine("Seu Vale Transporte: " + VT);
                 Console.WriteLine("Seu Salário: " + SL);
-                Console.Write("está correto?");
+                Console.Write("está correto(S/N)?: ");
 conti = Console.ReadLine();
                 
                 if (conti == "s" || conti == "S")
