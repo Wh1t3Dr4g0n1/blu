@@ -63,7 +63,7 @@ namespace meu_lindo
     {
         static void Main(string[] args)
         {
-                string nome, rg, cpf, EC, sexo, cont;
+                string nome, rg, cpf, EC, sexo, cont, conti;
                 int idade;
                 double SB, INSS, CM, VT, SL;
             
@@ -111,6 +111,10 @@ namespace meu_lindo
                 Console.WriteLine("Seu Convenio Médico: " + CM);
                 Console.WriteLine("Seu Vale Transporte: " + VT);
                 Console.WriteLine("Seu Salário: " + SL);
+                Console.Write("está correto?");
+conti = Console.ReadLine();
+                
+                if (conti == "s" || conti == "S")
                 Console.WriteLine("========================");
                 Console.WriteLine("Quer recomeçar(S/N)?: ");
                 cont = Console.ReadLine();
