@@ -116,6 +116,7 @@ conti = Console.ReadLine();
                 
                 if (conti == "s" || conti == "S")
                 Console.WriteLine("========================");
+                Console.WriteLine("(caso diga não, pressione ENTER após a resposta..)");
                 Console.WriteLine("Quer recomeçar(S/N)?: ");
                 cont = Console.ReadLine();
             }
