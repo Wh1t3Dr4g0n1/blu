@@ -63,10 +63,10 @@ namespace meu_lindo
     {
         static void Main(string[] args)
         {
-                string nome, rg, cpf, EC, sexo, cont, conti;
-                int idade;
-                double SB, INSS, CM, VT, SL;
-            
+            string nome, rg, cpf, EC, sexo, cont, conti;
+            int idade;
+            double SB, INSS, CM, VT, SL;
+
             do
             {
                 Console.Clear();
@@ -86,16 +86,20 @@ namespace meu_lindo
                 Console.Write("Seu Estado Civil: ");
                 EC = Console.ReadLine();
                 Console.Write("Seu Salário Líquido: ");
-                SB = int.Parse(Console.ReadLine());
+                SB = double.Parse(Console.ReadLine());
 
                 INSS = SB * 0.11;
                 CM = SB * 0.06;
                 VT = SB * 0.06;
                 SL = SB - (INSS + CM + VT);
 
-                if (sexo == "Masculino")
+                if (sexo == "Masculino" || sexo == "masculino")
                     SL = SL + 1000.00;
                 else
+                    SL = SL + 0.00;
+
+                if (sexo == "Feminino" || sexo == "feminino")
+
                     SL = SL + 800.00;
 
                 Console.Clear();
@@ -106,26 +110,29 @@ namespace meu_lindo
                 Console.WriteLine("Idade: " + idade);
                 Console.WriteLine("Sexo: " + sexo);
                 Console.WriteLine("Estado Civil: " + EC);
-                Console.WriteLine("Salário Bruto: " + SB);
-                Console.WriteLine("Seu INSS: " + INSS);
-                Console.WriteLine("Seu Convenio Médico: " + CM);
-                Console.WriteLine("Seu Vale Transporte: " + VT);
-                Console.WriteLine("Seu Salário: " + SL);
+                Console.WriteLine("Salário Bruto: {0:0,00}", SB);
+                Console.WriteLine("Seu INSS: {0:0,00}" + INSS);
+                Console.WriteLine("Seu Convenio Médico: {0:0,00}", CM);
+                Console.WriteLine("Seu Vale Transporte: {0:0,00}", VT);
+                Console.WriteLine("Seu Salário: {0:0,00}", SL);
                 Console.Write("está correto(S/N)?: ");
-conti = Console.ReadLine();
-                
-                if (conti == "s" || conti == "S")
+                conti = Console.ReadLine();
+
+                if (conti == "s" || conti == "S" || conti == "sim" || conti == "Sim")
                 Console.WriteLine("========================");
-                Console.WriteLine("(caso diga não, pressione ENTER após a resposta..)");
-                Console.WriteLine("Quer recomeçar(S/N)?: ");
+                Console.Write("Quer recomeçar(S/N)?: ");
                 cont = Console.ReadLine();
+
+                if (cont == "n" || cont == "N" || cont == "Não" || cont == "Nao" || cont == "não" || cont == "nao")
+                    Console.WriteLine("(Pressione ENTER até fechar..)");
+
+                if (cont == "n" || conti == "N" || conti == "Não" || conti == "Nao" || conti == "não" || conti == "nao")
             }
-            while (cont == "s" || cont == "S");
+            while (cont == "s" || cont == "S" || cont == "sim" || cont == "Sim");
             Console.ReadKey();
         }
     }
 }
-
 
 
 
