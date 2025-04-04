@@ -28,7 +28,7 @@ namespace meu_lindo
                 Console.Write("deseja continuar(S/N)? : ");
                 cont = Console.ReadLine();
             }
-            while (cont == "s" || cont == "S");
+            while (cont == "s" || cont == "S" || cont == "Sim" || cont == "sim");
             Console.ReadKey();
 
         }
