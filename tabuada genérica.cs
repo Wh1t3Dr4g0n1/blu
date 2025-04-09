@@ -15,14 +15,14 @@ namespace meu_lindo
             Console.Write("manda um numero para o teu pai, que eu lhe darei a tabuada completa do mesmo: ");
             int blu;
             int bla;
-            blu = Convert.ToInt32(Console.ReadLine());
+            blu = int.Parse(Console.ReadLine());
+            Console.WriteLine("=====================================");
             for (bla = 1; bla <= 10; bla++)
             {
-                Console.ReadKey();
-                Console.WriteLine(bla + " x " + blu + " = " + (blu * bla));
+                Console.WriteLine(blu + " x " + bla + " = " + (blu * bla));
             }
+            Console.WriteLine("=====================================");
             Console.ReadKey();
-
         }
     }
 }
